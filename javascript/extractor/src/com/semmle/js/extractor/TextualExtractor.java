@@ -118,7 +118,7 @@ public class TextualExtractor {
   private static final String esc = "\nn\rr\tt";
 
   public static String sanitiseToString(String str) {
-    if (str.length() > 20) str = str.substring(0, 7) + " ... " + str.substring(str.length() - 7);
+    // if (str.length() > 20) str = str.substring(0, 7) + " ... " + str.substring(str.length() - 7);
 
     StringBuilder res = new StringBuilder();
     for (int i = 0, n = str.length(); i < n; ++i) {
